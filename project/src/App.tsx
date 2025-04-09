@@ -16,6 +16,7 @@ import { Activities } from './pages/Activities';
 import { Resources } from './pages/Resources';
 import { Admin } from './pages/Admin';
 import { UploadContent } from './pages/UploadContent';
+import { AuthCallback } from './pages/AuthCallback';
 
 // Layout component that includes Header and Footer
 const Layout = () => {
@@ -41,14 +42,9 @@ const router = createBrowserRouter(
       <Route path="/resources" element={<Resources />} />
       <Route path="/admin" element={<Admin />} />
       <Route path="/upload" element={<UploadContent />} />
+      <Route path="/auth/callback" element={<AuthCallback />} />
     </Route>
-  ),
-  {
-    future: {
-      v7_startTransition: true,
-      v7_relativeSplatPath: true
-    }
-  }
+  )
 );
 
 function App() {
