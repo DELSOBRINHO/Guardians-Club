@@ -11,11 +11,11 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Profile } from './pages/Profile';
-<<<<<<< HEAD
-import { ContentPage } from '/src/pages/Content.tsx';
-=======
+
+
+
 import { ContentPage } from './pages/Content';
->>>>>>> a784360f29d7016b64bbeab33dbb55e2cca55540
+
 import { Activities } from './pages/Activities';
 import { Resources } from './pages/Resources';
 import { Admin } from './pages/Admin';
@@ -27,7 +27,6 @@ const Layout = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-<<<<<<< HEAD
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
@@ -37,9 +36,6 @@ const Layout = () => {
           <Route path="/admin" element={<Admin />} />
           <Route path="/upload" element={<UploadContent />} />
         </Routes>
-=======
-        <Outlet />
->>>>>>> a784360f29d7016b64bbeab33dbb55e2cca55540
       </main>
       <Footer />
     </div>

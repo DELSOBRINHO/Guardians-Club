@@ -14,7 +14,7 @@ interface ContentItem {
   created_at: string;
 }
 
-export function npm() {
+export function ContentPage() {
   const [contentData, setContentData] = useState<ContentItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -62,7 +62,7 @@ export function npm() {
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4 md:mb-0">Educational Content</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4 md:mb-0">Conteúdo Educacional</h1>
 
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
             <div className="relative">
