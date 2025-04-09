@@ -14,7 +14,7 @@ interface ContentItem {
   created_at: string;
 }
 
-export function ContentPage() {
+export function npm() {
   const [contentData, setContentData] = useState<ContentItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
