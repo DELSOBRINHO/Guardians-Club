@@ -36,7 +36,7 @@ CREATE POLICY "Authenticated users can read content"
 CREATE POLICY "Teachers and admins can create content"
   ON content FOR INSERT
   TO authenticated
-  USING (
+  WITH CHECK (
     EXISTS (
       SELECT 1 FROM profiles
       WHERE id = auth.uid()
@@ -109,7 +109,7 @@ CREATE POLICY "Users can update own notifications"
 CREATE POLICY "Admins can create notifications"
   ON notifications FOR INSERT
   TO authenticated
-  USING (
+  WITH CHECK (
     EXISTS (
       SELECT 1 FROM profiles
       WHERE id = auth.uid()

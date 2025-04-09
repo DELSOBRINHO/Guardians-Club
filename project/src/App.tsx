@@ -4,7 +4,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Profile } from './pages/Profile';
-import { Content } from './pages/Content';
+import { ContentPage } from '/src/pages/Content.tsx';
 import { Activities } from './pages/Activities';
 import { Resources } from './pages/Resources';
 import { Admin } from './pages/Admin';
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/content" element={<Content />} />
+          <Route path="/content" element={<ContentPage />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/admin" element={<Admin />} />
